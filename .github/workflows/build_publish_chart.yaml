@@ -49,7 +49,11 @@ jobs:
         if: steps.list-changed.outputs.changed == 'true'
 
       - name: Run chart-testing (install)
-        run: ct install
+        run: |
+          echo target-branch: main > ./config.yml
+          echo helm-extra-args: --timeout 600 >> ./config.yml
+          echo validate-maintainers: false >> ./config.yml
+          ct install
   release:
     needs: lint-test
     runs-on: ubuntu-latest
