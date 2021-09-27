@@ -53,7 +53,7 @@ jobs:
           echo target-branch: main > ./config.yml
           echo helm-extra-args: --timeout 600 >> ./config.yml
           echo validate-maintainers: false >> ./config.yml
-          ct install
+          ct install --config ./config.yml
   release:
     needs: lint-test
     runs-on: ubuntu-latest
