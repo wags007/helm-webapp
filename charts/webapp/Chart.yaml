@@ -1,6 +1,6 @@
 apiVersion: v2
-name: changeme
-description: CHANGEME - A Helm chart for deploying CHANGEME to Kubernetes
+name: basicWebapp
+description: basicWebapp - A Helm chart for deploying basicWebapp to Kubernetes
 
 # A chart can be either an 'application' or a 'library' chart.
 #
