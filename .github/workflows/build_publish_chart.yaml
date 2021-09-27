@@ -30,7 +30,7 @@ jobs:
         id: list-changed
         run: |
           echo target-branch: main \
-          helm-extra-args: --timeout 600
+          helm-extra-args: --timeout 600 \
           validate-maintainers: false >> ./config.yml
           changed=$(ct list-changed --config ./config.yml)
           if [[ -n "$changed" ]]; then
