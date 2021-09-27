@@ -29,7 +29,10 @@ jobs:
       - name: Run chart-testing (list-changed)
         id: list-changed
         run: |
-          changed=$(ct list-changed)
+          echo target-branch: main \
+          helm-extra-args: --timeout 600
+          validate-maintainers: false >> ./config.yml
+          changed=$(ct list-changed --config ./config.yml)
           if [[ -n "$changed" ]]; then
             echo "::set-output name=changed::true"
           fi
