@@ -38,7 +38,11 @@ jobs:
           fi
 
       - name: Run chart-testing (lint)
-        run: ct lint
+        run: |
+          echo target-branch: main > ./config.yml
+          echo helm-extra-args: --timeout 600 >> ./config.yml
+          echo validate-maintainers: false >> ./config.yml
+          ct lint --config ./config.yml
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.2.0
