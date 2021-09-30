@@ -1,0 +1,19 @@
+{{- with .Values.envConfigMaps }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-envs-{{ include "webapp.fullname" . }}
+data:
+    APPNAME: {{ include "webapp.fullname" . }}    
+      {{- toYaml . | nindent 4 }}
+{{- end }}
+---
+{{- with .Values.configMaps }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-file-{{ include "webapp.fullname" . }}
+data:
+    APPNAME: {{ include "webapp.fullname" . }}
+    {{- toYaml . | nindent 4 }}
+{{- end }}
