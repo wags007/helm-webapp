@@ -56,7 +56,7 @@ jobs:
   #         ct install --config ./config.yml
   release:
     #needs: lint-test
-    runs-on: sw-ubuntu-latest
+    runs-on: sw-rancher-runner
     steps:
       - name: Checkout
         uses: actions/checkout@v2
