@@ -75,5 +75,5 @@ jobs:
           config: cr.yaml
         env:
           CR_SKIP_EXISTING: false
-          #CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          CR_TOKEN: "${{ secrets.WAGNER_PAT }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          #CR_TOKEN: "${{ secrets.WAGNER_PAT }}"
