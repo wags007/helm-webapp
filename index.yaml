@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  webapp:
+  - apiVersion: v2
+    appVersion: 1.0.4
+    created: "2022-02-28T20:43:54.056965Z"
+    description: basicWebapp - A Helm chart for deploying basicWebapp to Kubernetes
+    digest: 38154f33891ba67b51e9b3ab64e0afd6d154d9b7891302dd266b5eb96ceab9fb
+    maintainers:
+    - email: wags007@gmail.com
+      name: Brian Wagner
+    name: webapp
+    type: application
+    urls:
+    - https://github.com/wags007/helm-webapp/releases/download/webapp-0.2.10/webapp-0.2.10.tgz
+    version: 0.2.10
+generated: "2022-02-28T20:43:54.0569715Z"
