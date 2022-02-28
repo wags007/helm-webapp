@@ -1,3 +1,4 @@
-#git-base-url: https://api.github.com/
-#git-upload-url: https://uploads.github.com/
-git-repo: webappChart
+git-base-url: https://api.github.com/
+git-upload-url: https://uploads.github.com/
+git-repo: helm-webapp
+owner: wags007
