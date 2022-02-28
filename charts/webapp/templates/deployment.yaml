@@ -6,7 +6,7 @@ metadata:
     {{- include "webapp.labels" . | nindent 4 }}
     app.kubernetes.io/name: {{ include "webapp.fullname" . }}
   annotations:
-    sw.appname : "{{ include "webapp.fullname" . }}"
+    
 
 spec:
   {{- if not .Values.autoscaling.enabled }}

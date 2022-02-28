@@ -7,7 +7,6 @@ on:
 
 jobs:
   lint-test:
-    runs-on: sw-ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -75,5 +74,4 @@ jobs:
           config: cr.yaml
         env:
           CR_SKIP_EXISTING: false
-          #CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          CR_TOKEN: "${{ secrets.WAGNER_PAT }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

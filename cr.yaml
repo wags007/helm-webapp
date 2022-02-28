@@ -1,5 +1,3 @@
 #git-base-url: https://api.github.com/
-git-base-url: https://github.sherwin.com/api/v3/
-git-upload-url: https://github.sherwin.com/api/uploads/
 #git-upload-url: https://uploads.github.com/
 git-repo: webappChart

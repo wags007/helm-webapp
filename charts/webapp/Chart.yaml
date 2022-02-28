@@ -3,8 +3,8 @@ name: webapp
 description: basicWebapp - A Helm chart for deploying basicWebapp to Kubernetes
 
 maintainers:
-  - name: TAG Ecommerce
-    email: ecommerce.engineering@sherwin.com
+  - name: Brian Wagner
+    email: wags007@gmail.com
 
 # A chart can be either an 'application' or a 'library' chart.
 #

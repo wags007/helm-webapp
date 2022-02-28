@@ -25,20 +25,7 @@ serviceAccount:
 
 podAnnotations:
   # The following are all required variables
-  sw.project: "YOURPROJECTNAMEHERE"
-  sw.description: "DESCRIBE your project here"
-  sw.extdbs: "IS There an EXTERNALDB"
-  sw.extsvcs: "DOES the App rely on an EXTERNALSERVICE"
-  sw.bus.unit: "What is the BUSINESSUNIT this app is for"
-  sw.bus.group: "What is the BUSINESSGROUP for this application"
-  sw.bus.groupemail: "What is the business GROUPEMAIL"
-  sw.costcenter: "What is there Cost Center"
-  sw.division: "Which divison of the company"
-  sw.it.group: "Which ITGROUP support this application"
-  sw.it.teamemail: "What is the ITTEAMEMAIL"
-  sw.it.team: "Which ITTEAM supports this application"
-  sw.gitrepo: "GITHUBLOCATION"
-  sw.lastbuild: "@BUILD_DATE"
+
 
 podLabels:
   # The following but not recommended labels
